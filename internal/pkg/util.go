@@ -1,19 +1,6 @@
-package main
+package pkg
 
 import "errors"
-
-type Num struct {
-	Number int
-}
-
-func (x Num) X() int {
-	return x.Number * 1
-}
-
-type x interface {
-	x() int
-	s() error
-}
 
 func ReverseInt(x interface{}) (int, error) {
 	y, ok := x.(int)

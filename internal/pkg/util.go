@@ -1,3 +1,4 @@
+//go:generate mockgen -source ./util.go -destination=../mocks/ut.go -package=mock_util
 package pkg
 
 import "errors"

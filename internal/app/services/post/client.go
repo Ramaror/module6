@@ -1,5 +1,5 @@
-//go:generate mockgen -source ./client.go -destination=./mocks/client.go -package=mock_client
-package module6_2
+//go:generate mockgen -source=./client.go -destination=./mocks/client_mock.go -package=mock_client
+package post
 
 import (
 	"encoding/json"

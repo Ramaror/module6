@@ -5,7 +5,7 @@
 package mock_client
 
 import (
-	module6_2 "module6/module6_2"
+	post "module6/internal/app/services/post"
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
@@ -35,10 +35,10 @@ func (m *MockClient) EXPECT() *MockClientMockRecorder {
 }
 
 // GetList mocks base method.
-func (m *MockClient) GetList() ([]module6_2.Post, error) {
+func (m *MockClient) GetList() ([]post.Post, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "GetList")
-	ret0, _ := ret[0].([]module6_2.Post)
+	ret0, _ := ret[0].([]post.Post)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
